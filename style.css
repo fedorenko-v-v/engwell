@@ -1,0 +1,1191 @@
+body{
+	background: #fff;
+	overflow-y: auto;
+}
+
+@font-face {
+	font-family: RobotoRegular;
+	src: url(fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url(fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: CuprumItalic;
+	src: url(fonts/cuprum/Cuprum-Italic.ttf);
+}
+
+@font-face {
+	font-family: CuprumBold;
+	src: url(fonts/cuprum/Cuprum-Bold.ttf);
+}
+
+@font-face {
+	font-family: TTWalls;
+	src: url(fonts/tt/TTWalls.otf);
+}
+
+#btnToTop{
+	position: fixed;
+	z-index: 100;
+	right: 60px;
+	bottom: 60px;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: url(img/btnToTop.png);
+	cursor: pointer;
+	display: none;
+}
+
+.btnMenu{
+	position: absolute;
+	top: 25px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	background-color: #3f4a87;
+	background-image: url(img/btnMenu.png);
+	background-position: 0px 0px;
+	display: none;
+}
+
+.mainWrap{
+	position: relative;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+.wrap{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.wrap.blue{
+	background: #f8f8f8;
+}
+
+.work{
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 0px 10px;
+}
+
+.sectionTitle{
+	position: relative;
+	float: left;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-bottom: 80px;
+	font-size: 24px;
+	font-family: RobotoBold;
+	text-transform: uppercase;
+}
+
+.sectionTitle::before{
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 32px;
+	width: 120px;
+	height: 2px;
+	background: #c7243a;
+	margin-left: -60px;
+}
+
+.sectionTitle::after{
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 21px;
+	width: 24px;
+	height: 24px;
+	background: #fff;
+	margin-left: -12px;
+	box-sizing: border-box;
+	border: 2px solid #c7243a;
+	transform-origin: center center;
+	transform: rotate(45deg);
+}
+
+.wrap.blue .sectionTitle::after{
+	background: #f8f8f8;
+}
+
+/***************************************************** Верхняя шапка ********************************/
+.topHeader{
+	float: left;
+	width: 100%;
+	height: 90px;
+}
+
+.topHeader .leftBlock{
+	float: left;
+	width: 430px;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.topHeader .leftBlock .logo{
+	float: left;
+	width: 64px;
+	height: 64px;
+	background: url(img/logo.png);
+}
+
+.topHeader .leftBlock .name{
+	float: left;
+	width: calc(100% - 64px);
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+.topHeader .leftBlock .name .title{
+	float: left;
+	width: 100%;
+	display: inline-block;
+	font-size: 26px;
+	font-family: RobotoBold;
+	color: #3f4b88;
+}
+
+.topHeader .leftBlock .name .engWell{
+	float: left;
+	display: inline-block;
+	font-size: 18px;
+	font-family: RobotoBold;
+	color: #000;
+	margin-top: 5px;
+}
+
+.topHeader .leftBlock .name .engWell .phone{
+	display: none;
+}
+
+.topHeader .mainMenu{
+	float: right;
+	width: calc(100% - 430px);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.topHeader .mainMenu .listMenu{
+	float: right;
+}
+
+.topHeader .mainMenu .listMenu li{
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	padding-left: 17px;
+	font-family: RobotoRegular;
+	font-size: 18px;
+}
+
+.topHeader .mainMenu .listMenu li a{
+	text-decoration: none;
+	color: #000;
+}
+
+.topHeader .mainMenu .listMenu li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.topHeader .mainMenu .listMenu li:hover a{
+	color: #3f4b88;
+}
+
+.topHeader .mainMenu .listMenu li:first-child{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.topHeader .mainMenu .listMenu li:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 7px;
+	height: 7px;
+	background: #c7243a;
+	margin-top: -3px;
+}
+
+.topHeader .mainMenu .listMenu li:first-child:before{
+	content: none;
+}
+/***************************************************** Верхняя шапка ********************************/
+
+/***************************************************** Шапка ********************************/
+.wrap.header{
+	height: 500px;
+	background-image: url(img/header.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #eef1f6;
+}
+
+.wrap.header .HeaderBlock{
+	float: left;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.wrap.header .HeaderBlock .callMe{
+	position: absolute;
+	top: 20px;
+	right: 0px;
+}
+
+.wrap.header .HeaderBlock .callMe .title{
+	float: left;
+	width: 100%;
+	text-align: right;
+	font-size: 24px;
+	color: #c83047;
+	font-family: RobotoRegular;
+}
+
+.wrap.header .HeaderBlock .callMe .phone{
+	position: relative;
+	float: right;
+	display: inline-block;
+	text-align: right;
+	font-size: 36px;
+	color: #000;
+	text-decoration: none;
+	font-family: TTWalls;
+	margin-top: 10px;
+	height: 34px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.wrap.header .HeaderBlock .callMe .phone:before{
+		content: '';
+		position: absolute;
+		left: -50px;
+		bottom: 5px;
+		width: 40px;
+		height: 34px;
+		background: url(img/phone.png) no-repeat left top;
+}
+/***************************************************** Шапка ********************************/
+/***************************************************** Услуги ********************************/
+.Services{
+	float: left;
+	width: 100%;
+	padding: 50px 0px;
+}
+
+.Services .listServices{
+	float: left;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.Services .listServices li{
+	position: relative;
+	float: left;
+	width: 33.333333333333333333333333333%;
+	text-align: center;
+	padding: 20px;
+	padding-top: 160px;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #3f4b88;
+	font-family: RobotoBold;
+	text-transform: uppercase;
+	line-height: 1.4em;
+}
+
+.Services .listServices li::before{
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	width: 110px;
+	height: 110px;
+	box-sizing: border-box;
+	border: 2px solid #e5e5e5;
+	border-radius: 5px;
+	margin-left: -50px;
+	background-image: url(img/services.png);
+	background-repeat: no-repeat;
+}
+
+.Services .listServices li:nth-child(1)::before{
+	background-position: 0px 0px;
+}
+
+.Services .listServices li:nth-child(2)::before{
+	background-position: 0px -110px;
+}
+
+.Services .listServices li:nth-child(3)::before{
+	background-position: 0px -220px;
+}
+
+.Services .listServices li:nth-child(4)::before{
+	background-position: 0px -330px;
+}
+
+.Services .listServices li:nth-child(5)::before{
+	background-position: 0px -440px;
+}
+
+.Services .listServices li:nth-child(6)::before{
+	background-position: 0px -550px;
+}
+
+.Prices{
+	float: left;
+	width: 100%;
+	padding: 50px 0px;
+	padding-top: 30px;
+}
+
+.pricesBlock{
+	float: left;
+	width: 100%;
+}
+
+.pricesBlock .pricesList{
+	float: left;
+	width: 100%;
+}
+
+.pricesBlock .pricesList li{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #3f4b88;
+	font-family: RobotoBold;
+	text-transform: uppercase;
+	line-height: 1.4em;
+}
+
+.pricesBlock .pricesList li .mobLine{
+	display: inline-block;
+}
+
+.pricesBlock .pricesList li span{
+	color: #c73247;
+}
+
+.pricesBlock .pricesList li:nth-child(1){
+	text-align: left;
+	padding-right: 40px;
+}
+
+.pricesBlock .pricesList li:nth-child(2){
+	text-align: right;
+	padding-left: 40px;
+}
+/***************************************************** Услуги ********************************/
+
+/***************************************************** Занятия ********************************/
+.Lessons{
+	float: left;
+	width: 100%;
+	padding: 50px 0px;
+}
+
+.Lessons .lessonsList{
+	float: left;
+	width: 100%;
+}
+
+.Lessons .lessonsList li{
+	position: relative;
+	float: left;
+	width: 33.333333333333333333333%;
+	box-sizing: border-box;
+	padding: 20px;
+	padding-top: 170px;
+	font-size: 16px;
+	font-family: RobotoRegular;
+	line-height: 1.4em;
+}
+
+.Lessons .lessonsList li .digit{
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	width: 192px;
+	height: 111px;
+	background-image: url(img/lessonsBlue.png);
+	margin-left: -96px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 48px;
+	color: #fff;
+	font-family: TTWalls;
+}
+
+.Lessons .lessonsList li:nth-child(2) .digit{
+	background-image: url(img/lessonsRed.png);
+}
+/***************************************************** Занятия ********************************/
+/***************************************************** Преимущества ********************************/
+.advantages{
+	float: left;
+	width: 100%;
+	padding: 50px 0px;
+}
+
+.advantages .advantagesList{
+	float: left;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.advantages .advantagesList li{
+	position: relative;
+	float: left;
+	width: 33.3333333333333333%;
+	box-sizing: border-box;
+	padding: 20px 30px 20px 50px;
+	font-size: 19px;
+	line-height: 1.3em;
+	font-family: CuprumItalic;
+}
+
+.advantages .advantagesList li:before{
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 32px;
+	height: 32px;
+	background: url(img/chech.png);
+}
+/***************************************************** Преимущества ********************************/
+/***************************************************** Ученики ********************************/
+.childrens{
+	float: left;
+	width: 100%;
+}
+
+.childrens .childrensBlock{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.childrens .childrensBlock::before{
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(63,75,136,0);
+}
+
+.childrens .childrensBlock .childrenPhoto{
+	float: left;
+	width: 20%;
+	height: 290px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/***************************************************** Ученики ********************************/
+/***************************************************** Отзывы ********************************/
+.reviews{
+	float: left;
+	width: 100%;
+	padding: 50px 0px;
+}
+
+.reviews .reviewsBlock{
+	float: left;
+	width: 100%;
+}
+
+.reviews .reviewsListContainer{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0px 40px;
+}
+
+.reviews .reviewsBlock .reviewsList{
+	position: relative;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 40px 140px;
+}
+
+.reviews .reviewsBlock .reviewsList *{
+	outline: none;
+}
+
+.reviews .reviewsBlock .reviewsList .slide{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.reviews .reviewsBlock .reviewsList .slide .text{
+	font-size: 16px;
+	color: #707070;
+	line-height: 1.4em;
+	text-align: center;
+	font-family: RobotoRegular
+}
+
+.reviews .reviewsBlock .reviewsList .slide .authorReview{
+	display: inline-block;
+	width: 100%;
+	margin-top: 25px;
+	font-size: 18px;
+	color: #c83047;
+	font-family: CuprumItalic;
+}
+
+.reviews .reviewsBlock .reviewsList::before,
+.reviews .reviewsBlock .reviewsList::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 64px;
+	height: 56px;
+	margin-top: -28px;
+	background-image: url(img/quote.png);
+}
+
+.reviews .reviewsBlock .reviewsList::before{
+	left: 0px;
+	background-position: 0px 0px;
+}
+
+.reviews .reviewsBlock .reviewsList::after{
+	background-position: -64px 0px;
+	right: 0px;
+}
+
+.reviews .reviewsBlock .reviewsList .slick-arrow{
+	display: none !important;
+}
+
+.reviews .reviewsBlock .reviewsList .slick-dots{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.reviews .reviewsBlock .reviewsList .slick-dots li{
+	display: inline-block;
+}
+
+.reviews .reviewsBlock .reviewsList .slick-dots li button{
+	font-size: 0px;
+	width: 20px;
+	height: 20px;
+	margin: 0px 5px;
+	background: #bbbbbb;
+	cursor: pointer;
+	border: none;
+	box-shadow: none;
+	border-radius: 50%;
+}
+
+.reviews .reviewsBlock .reviewsList .slick-dots li.slick-active button{
+	background: #3f4b88;
+}
+/***************************************************** Отзывы ********************************/
+/***************************************************** О себе ********************************/
+.aboutMe{
+	float: left;
+	width: 100%;
+	padding: 25px 0px;
+}
+
+.aboutMeBlock{
+	float: left;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.aboutMeBlock .myPhoto{
+	float: left;
+	width: 30%;
+}
+
+.aboutMeBlock .aboutBlock{
+	float: left;
+	width: 70%;
+}
+
+.aboutMeBlock .aboutBlock .title{
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 48px;
+	color: #3f4b88;
+	font-family: TTWalls;
+}
+
+.aboutMeBlock .aboutBlock .text{
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	color: #000;
+	font-family: CuprumBold;
+	margin-top: 70px;
+}
+
+.aboutMeBlock .aboutBlock .text .red{
+	color: #c83047;
+}
+
+.aboutMeBlock .aboutBlock .text .blue{
+	color: #3f4b88;
+}
+
+.aboutMeBlock .aboutBlock .playerBlock{
+	float: left;
+	width: 100%;
+	margin-top: 70px;
+	text-align: center;
+}
+
+.aboutMeBlock .aboutBlock .phone{
+	position: relative;
+	float: right;
+	margin-top: 70px;
+	font-size: 36px;
+	font-family: TTWalls;
+	color: #000;
+	text-decoration: none;
+}
+
+.aboutMeBlock .aboutBlock .phone:before{
+		content: '';
+		position: absolute;
+		left: -60px;
+		bottom: 5px;
+		width: 40px;
+		height: 34px;
+		background: url(img/phone.png) no-repeat left top;
+}
+
+.audio_player_section{
+	position: relative;
+	display: inline-block;
+	width: 390px;
+	height: 40px;
+	background: #3f4b88;
+}
+
+.audio_player_section .btn_play{
+	position: relative;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.audio_player_section .separator{
+	float: left;
+	width: 1px;
+	height: 100%;
+	background: rgba(255,255,255,0.1);
+	border-right: 1px solid rgba(0,0,0,0.5);
+}
+
+.audio_player_section .btn_play:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 10px solid transparent;
+	border-left: 12px solid #fff;
+	margin-top: -10px;
+	margin-left: -5px;
+}
+
+.audio_player_section .btn_play.pause:before{
+	width: 30px;
+	height: 30px;
+	top: 0px;
+	left: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	border: none;
+	background: url(img/pause.png);
+}
+
+.audio_player_section .volume_block{
+	position: relative;
+	float: right;
+	width: 50px;
+	height: 10px;
+	margin-right: 10px;
+	background: none;
+	margin-top: 15px;
+}
+
+.audio_player_section .volume_block .volume_line_first{
+	position: absolute;
+	z-index: 0;
+	top: 3px;
+	left: 0px;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+}
+
+.audio_player_section .volume_block .volume_line_second{
+	position: absolute;
+	z-index: 1;
+	top: 3px;
+	left: 0px;
+	width: 0px;
+	height: 4px;
+	background: #c5ccff;
+}
+
+.audio_player_section .volume_block .run{
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.audio_player_section .music_block{
+	position: relative;
+	float: left;
+	width: 170px;
+	height: 10px;
+	margin: 15px 10px 0px 10px;
+}
+
+.audio_player_section .music_block .music_line_first{
+	position: absolute;
+	z-index: 0;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+.audio_player_section .music_block .music_line_second{
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 100%;
+	background: #c83047;
+}
+
+.audio_player_section .time_block{
+	float: left;
+	width: 50px;
+	height: 40px;
+	line-height: 16px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	font-family: CuprumBold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.audio_player_section .iconVolime{
+	float: left;
+	width: 16px;
+	height: 40px;
+	background: url(img/iconVolime.png) no-repeat center center;
+	margin-left: 14px;
+}
+/***************************************************** О себе ********************************/
+/***************************************************** Подвал ********************************/
+.wrap.footer{
+	background: #3f4b88;
+}
+
+.footerSection{
+	float: left;
+	width: 100%;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footerSection span{
+	color: #fff;
+	font-size: 14px;
+	font-family: RobotoRegular;
+}
+/***************************************************** Подвал ********************************/
+
+@media only screen and (max-width: 1600px){
+	.childrens .childrensBlock .childrenPhoto{
+		width: 25%;
+	}
+
+	.childrens .childrensBlock .childrenPhoto:last-child{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1366px){
+	.childrens .childrensBlock .childrenPhoto{
+		height: 250px;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.childrens .childrensBlock .childrenPhoto{
+		height: 230px;
+	}
+
+	#btnToTop{
+		right: 40px;
+	}
+
+	.wrap.header{
+		height: 440px;
+		background-size: cover;
+	}
+
+	.wrap.header .HeaderBlock .callMe{
+		top: 10px;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.childrens .childrensBlock .childrenPhoto{
+		height: 200px;
+	}
+	.topHeader .leftBlock .name .title{
+		font-size: 22px;
+	}
+	.wrap.header{
+		height: 450px;
+	}
+}
+
+@media only screen and (max-width: 1023px){
+	.topHeader .mainMenu .btnMenu{
+		display: block;
+		z-index: 102;
+	}
+
+	.topHeader .mainMenu.open .btnMenu{
+		position: fixed;
+		background-color: #c83047;
+		background-position: 0px -40px;
+	}
+
+	.topHeader .mainMenu .listMenuContainer{
+		display: none;
+		position: fixed;
+		align-items: center;
+		z-index: 101;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.8);
+	}
+
+	.topHeader .mainMenu.open .listMenuContainer{
+		display: flex;
+	}
+
+	.topHeader .mainMenu .listMenu{
+		display: block;
+		width: 100%;
+	}
+
+	.topHeader .mainMenu .listMenu li{
+		float: left;
+		width: 100%;
+		text-align: center;
+		padding: 0px;
+		margin: 12px 0px;
+	}
+
+	.topHeader .mainMenu .listMenu li:before{
+		content: none;
+	}
+
+	.topHeader .mainMenu .listMenu li a{
+		color: #fff;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.wrap.header{
+		height: 380px;
+	}
+	.wrap.header .HeaderBlock .callMe{
+		top: 10px;
+	}
+
+	.wrap.header .HeaderBlock .callMe .phone{
+		font-size: 28px;
+		margin-top: 0px;
+	}
+
+	.wrap.header .HeaderBlock .callMe .phone:before{
+    width: 33px;
+    height: 28px;
+		background-size: cover;
+	}
+
+	.aboutMeBlock .myPhoto{
+		width: 40%;
+	}
+
+	.aboutMeBlock .aboutBlock{
+		width: 60%;
+	}
+
+	.aboutMeBlock .aboutBlock .text,
+	.aboutMeBlock .aboutBlock .playerBlock,
+	.aboutMeBlock .aboutBlock .phone{
+		margin-top: 50px;
+	}
+
+	.wrap.header .HeaderBlock .callMe .title{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.childrens .childrensBlock .childrenPhoto{
+		width: 50%;
+		height: 250px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.Services .listServices li{
+		width: 50%;
+	}
+
+	.advantages .advantagesList li{
+		width: 50%;
+	}
+
+	.Lessons .lessonsList li{
+		width: 100%;
+		text-align: center;
+	}
+
+	.reviews .reviewsListContainer{
+		padding: 0px 20px;
+	}
+
+	.reviews .reviewsBlock .reviewsList{
+		padding: 20px 100px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.wrap.header .HeaderBlock .callMe{
+		display: none;
+	}
+
+	.pricesBlock .pricesList li .mobLine{
+		display: block;
+	}
+
+	.topHeader .leftBlock .name .engWell .phone{
+		display: inline-block;
+		text-decoration: none;
+		color: #c73047;
+	}
+}
+
+@media only screen and (max-width: 739px){
+	.aboutMeBlock{
+		flex-wrap: wrap;
+	}
+
+	.aboutMeBlock .myPhoto{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.aboutMeBlock .aboutBlock{
+		width: 100%;
+	}
+
+	#btnToTop{
+		right: auto;
+		left: 20px;
+	}
+
+	.pricesBlock .pricesList li{
+		width: 100%;
+	}
+
+	.pricesBlock .pricesList li:nth-child(1),
+	.pricesBlock .pricesList li:nth-child(2){
+		text-align: center;
+		padding-right: 0px;
+		padding-left: 0px;
+		margin-top: 20px;
+		padding: 0px 10px;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	.reviews .reviewsBlock .reviewsList{
+		padding: 20px;
+	}
+
+	.wrap.header{
+		height: 300px;
+	}
+
+	.reviews .reviewsBlock .reviewsList::before{
+		top: 0px;
+	}
+
+	.reviews .reviewsBlock .reviewsList::after{
+		top: auto;
+		bottom: 26px;
+	}
+
+	.reviewsList .slick-track{
+		padding-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 540px){
+	.topHeader .leftBlock{
+		width: auto;
+	}
+
+	.Services .listServices li{
+		width: 100%;
+	}
+
+	.advantages .advantagesList li{
+			width: 100%;
+			padding: 20px 30px 20px 70px;
+	}
+
+	.advantages .advantagesList li:before{
+		left: 20px;
+	}
+
+	.childrens .childrensBlock .childrenPhoto{
+		height: 180px;
+	}
+
+	.reviews .reviewsBlock .reviewsList{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#btnToTop{
+		display: none !important;
+	}
+
+	.topHeader .leftBlock .name .engWell{
+		font-size: 13px;
+		padding-right: 50px;
+		line-height: 1.3em;
+	}
+
+	.topHeader .leftBlock .logo{
+		width: 48px;
+		height: 48px;
+		background-size: cover;
+	}
+}
+
+@media only screen and (max-width: 440px){
+	.topHeader .leftBlock .name .title{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 409px){
+	.audio_player_section{
+		width: 290px;
+	}
+
+	.audio_player_section .iconVolime,
+	.audio_player_section .volume_block,
+	.audio_player_section .separator.mob{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.childrens .childrensBlock .childrenPhoto{
+		width: 100%;
+		height: 260px;
+	}
+
+	.advantages .advantagesList li{
+			padding: 20px 10px 20px 50px;
+	}
+
+	.advantages .advantagesList li:before{
+		left: 5px;
+	}
+
+	.aboutMeBlock .aboutBlock .phone{
+		font-size: 30px;
+	}
+	.aboutMeBlock .aboutBlock .phone:before{
+		bottom: 0px;
+	}
+}
+
+@media only screen and (max-width: 380px){
+	.wrap.header{
+		height: 250px;
+	}
+
+	.topHeader .leftBlock .name .title{
+		box-sizing: border-box;
+		padding-right: 60px;
+	}
+}
